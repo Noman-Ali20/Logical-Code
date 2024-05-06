@@ -1,20 +1,20 @@
-package questions;
+package Questions;
 
 public class PalindromNumber {
 
 	public static void main(String[] args) {
-		int num = 121, rev=0, temp, dig;
-		temp=num;
-		
-		while(num>0) {
-			dig=num%10;
-			rev=(rev*10)+dig;
-			num=num/10;
+		int n = 101,dig,temp,sum=0;
+	    temp=n;
+		while(n>0) {
+			dig=n%10;
+			sum=(sum*10)+dig;
+			n=n/10;
 		}
-		if(temp==rev)
-			System.out.println("Number is palindrom");
+		if(temp==sum)
+			System.out.println("Palindrom");
 		else
-			System.out.println("Number is Not palindrom");
+			System.out.println("not palindrom");
+		
 	}
 
 }
